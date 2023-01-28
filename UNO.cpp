@@ -174,7 +174,7 @@ void UNO::wild_screen(int x, int y)
       {
         draw_four_by_human = false;
         wild_by_human = false;
-        // PC_turn();
+        PC_turn();
 
       }
 
@@ -311,7 +311,7 @@ void UNO::human_turn(int x, int y)
 
           else
           {
-            // PC_turn();
+            PC_turn();
           }
           // return;
           break;
@@ -381,7 +381,7 @@ void UNO::Click(int x, int y)
       && y >= left_most_card_of_bank.g.get_mover_rect().y && y <= (right_most_card_of_bank.g.get_mover_rect().y + right_most_card_of_bank.g.get_mover_rect().h)) // picking from bank
     {
       pick_from_bank("human_deck");
-      // PC_turn();
+      PC_turn();
     }
     else if (y >= 529 && y <= 579) //arrows
     {
